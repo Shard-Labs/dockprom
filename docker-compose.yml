@@ -117,11 +117,10 @@ services:
     image: stefanprodan/caddy
     container_name: caddy
     ports:
-      - "11000:3000"
+      - "3000:3000"
       - "9090:9090"
       - "9093:9093"
       - "9091:9091"
-      - "3000:3000"
     volumes:
       - ./caddy:/etc/caddy
     environment:
